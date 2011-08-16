@@ -4,11 +4,9 @@ set :application, "testing"
 
 # настройка системы контроля версий и репозитария, по умолчанию - git, если используется иная система версий, нужно изменить значение scm
 set :scm, :git
-default_run_options[:pty] = true  # Must be set for the password prompt from git to work
-set :repository, "git@github.com:macrails/likons.git"  # Your clone URL
+set :repository, "git://git@github.com:macrails/likons.git"  # Your clone URL
 
 set :user, "hosting_macrails"
-set :scm_passphrase, "1ove_mac"
 set :use_sudo, false
 set :deploy_to, "/home/hosting_macrails/projects/testing"
 
